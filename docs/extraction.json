@@ -1,0 +1,1518 @@
+{
+  "schema": "mooneural.extraction.v1",
+  "source_project": "dsge_hmc",
+  "source_commit": "0ec4a4d776e0985dd50efe40e9bed308733c46a6",
+  "source_owner": "chakkeiwong",
+  "extracted_on": "2026-10-01",
+  "scope": "Reusable model-independent neural training, not DSGE model/filter/HMC or campaign artifacts",
+  "files": [
+    {
+      "source": "src/dsge_hmc/training/generic_augmented_subspace.py",
+      "source_sha256": "5914597d11b8c720be3fdef00e41d6054c30caec5e7d4989697a8d7037f07b2d",
+      "destination": "src/mooneural/training/generic_augmented_subspace.py",
+      "extracted_sha256": "5914597d11b8c720be3fdef00e41d6054c30caec5e7d4989697a8d7037f07b2d",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_certified_numerics.py",
+      "source_sha256": "cdc8f4d1ad0206050e4a46b65df57c31e3f8cd9e75d35ba2aebf7503282d33e5",
+      "destination": "src/mooneural/training/generic_certified_numerics.py",
+      "extracted_sha256": "c744120b2323e0611c75d58282f67fa1f0b32885f8ada24e59a55a8584e3a134",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_component_descent.py",
+      "source_sha256": "9c8c7abe445f6ac6dd669b40faf2dc4acd52e6dc269097e720215e58c34f98ce",
+      "destination": "src/mooneural/training/generic_component_descent.py",
+      "extracted_sha256": "9c8c7abe445f6ac6dd669b40faf2dc4acd52e6dc269097e720215e58c34f98ce",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_conditional_expectation.py",
+      "source_sha256": "6e2f44b6639b9d8fb1297a5cd20743c9664a90b0482e1b17a124014aacf84ef8",
+      "destination": "src/mooneural/training/generic_conditional_expectation.py",
+      "extracted_sha256": "6e2f44b6639b9d8fb1297a5cd20743c9664a90b0482e1b17a124014aacf84ef8",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_control_evidence.py",
+      "source_sha256": "0a450ccd8ae0909fdc1eac04b39aebd49756b00d0af13294d35e14f6b6eae55f",
+      "destination": "src/mooneural/training/generic_control_evidence.py",
+      "extracted_sha256": "ffd5331e4a78fb14f45377f6bd2b8b53bc3ecd872e93e0a2a4039aca78235c32",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_coverage_initialization.py",
+      "source_sha256": "cca7aa29f3f47f4f16194309d1ea1c2e10b2bbc767b6501a936daec472f1737f",
+      "destination": "src/mooneural/training/generic_coverage_initialization.py",
+      "extracted_sha256": "cca7aa29f3f47f4f16194309d1ea1c2e10b2bbc767b6501a936daec472f1737f",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_coverage_objective.py",
+      "source_sha256": "23d5f8c4427f8e9269ca0dd39de3776422717cbb16a2a225774bff8d1b09a8fc",
+      "destination": "src/mooneural/training/generic_coverage_objective.py",
+      "extracted_sha256": "23d5f8c4427f8e9269ca0dd39de3776422717cbb16a2a225774bff8d1b09a8fc",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_coverage_runner.py",
+      "source_sha256": "7a57fe2a7e996de43014fc64bf08fd55338fdadf7b94bd44020f98fd6798642a",
+      "destination": "src/mooneural/training/generic_coverage_runner.py",
+      "extracted_sha256": "44e6c5f8f19e330952fc597f10d3ace54b6a2e9ee28141a75e6b894dd8759bbf",
+      "changes": "namespace relocation; installed SOURCE_ROOT separate from caller evidence ROOT; source snapshot names package-relative; absolute external identities require retained snapshots"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_curvature_progress.py",
+      "source_sha256": "24b4b0157095ce6588954909fe3be1695653530d745a1ddec3aba61a42516f57",
+      "destination": "src/mooneural/training/generic_curvature_progress.py",
+      "extracted_sha256": "24b4b0157095ce6588954909fe3be1695653530d745a1ddec3aba61a42516f57",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_derivative_warm_start.py",
+      "source_sha256": "7c0db8cdf10bd1a94cab1e7eb7d1571befd943aef3d98be95fd4a8fac98b5b57",
+      "destination": "src/mooneural/training/generic_derivative_warm_start.py",
+      "extracted_sha256": "7c0db8cdf10bd1a94cab1e7eb7d1571befd943aef3d98be95fd4a8fac98b5b57",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_displacement_blend.py",
+      "source_sha256": "258e8bf1ac86d3e7574df55fe8df699e0ee4c7362e39f88035741999128132ff",
+      "destination": "src/mooneural/training/generic_displacement_blend.py",
+      "extracted_sha256": "258e8bf1ac86d3e7574df55fe8df699e0ee4c7362e39f88035741999128132ff",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_execution_boundary.py",
+      "source_sha256": "5aa110a2d05f6a9465a656c6617e89b3c36d61f7083ca42e4dc9c86a825892ac",
+      "destination": "src/mooneural/training/generic_execution_boundary.py",
+      "extracted_sha256": "8efc5ddefac626fcdfaacf0339ebddfc9a67cde9f295e572b15accee68ddf87f",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_finite_objective_runner.py",
+      "source_sha256": "a6ba1ac95037a0dc029128e882b431b137a1893ee63623269b92168ba581ba34",
+      "destination": "src/mooneural/training/generic_finite_objective_runner.py",
+      "extracted_sha256": "4aad2e3eed13c103c856c3c8f700d5fca4dcc90041ffc728f59a534d97b0d901",
+      "changes": "namespace relocation; installed SOURCE_ROOT separate from caller evidence ROOT; source snapshot names package-relative; absolute external identities require retained snapshots"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_grouped_components.py",
+      "source_sha256": "f52513789b9fea018af2778334ed197d1e440f2fbae4206f5fab2212f92a7858",
+      "destination": "src/mooneural/training/generic_grouped_components.py",
+      "extracted_sha256": "f52513789b9fea018af2778334ed197d1e440f2fbae4206f5fab2212f92a7858",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_grouped_objective.py",
+      "source_sha256": "8500963b3d206765b48db0ba556558e9905b9d908ac000b285a65c2ca981ba2f",
+      "destination": "src/mooneural/training/generic_grouped_objective.py",
+      "extracted_sha256": "8500963b3d206765b48db0ba556558e9905b9d908ac000b285a65c2ca981ba2f",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_independent_role_bridge.py",
+      "source_sha256": "6c8c06351729e20dcd0de975a84042b348b0e550c024c84b4ddcf8d01d269803",
+      "destination": "src/mooneural/training/generic_independent_role_bridge.py",
+      "extracted_sha256": "6c8c06351729e20dcd0de975a84042b348b0e550c024c84b4ddcf8d01d269803",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_method_conformance.py",
+      "source_sha256": "b5a6d7ac4538b180edd8701c180d9ae72bbe077204f2547c7718ceac0f6d1b16",
+      "destination": "src/mooneural/training/generic_method_conformance.py",
+      "extracted_sha256": "b5a6d7ac4538b180edd8701c180d9ae72bbe077204f2547c7718ceac0f6d1b16",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_model_task_executor.py",
+      "source_sha256": "1e2a76c8435039c5df8b6cf7c23c0b557be1af86cd29b51e8ea5dc582ed15e67",
+      "destination": "src/mooneural/training/generic_model_task_executor.py",
+      "extracted_sha256": "1e2a76c8435039c5df8b6cf7c23c0b557be1af86cd29b51e8ea5dc582ed15e67",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_native_projection.py",
+      "source_sha256": "d80319f20ee1f411a8593aa365ef39814cd2ead792f6ddcbd19739625549035d",
+      "destination": "src/mooneural/training/generic_native_projection.py",
+      "extracted_sha256": "2c6aa8e5edf2569899d175f62281d8ebff0afeeb32863da064a850f4e8821fd7",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_objective_normalization.py",
+      "source_sha256": "58ccd66635630edd1dcddf5eb5c79b5d8ca679e486c559ab5e9046a8e2662926",
+      "destination": "src/mooneural/training/generic_objective_normalization.py",
+      "extracted_sha256": "58ccd66635630edd1dcddf5eb5c79b5d8ca679e486c559ab5e9046a8e2662926",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_parameter_normalization.py",
+      "source_sha256": "e41314aeb089c40b1b248ad34f7dde8c65fb8cc50babe501ce9a46a1c1c97a39",
+      "destination": "src/mooneural/training/generic_parameter_normalization.py",
+      "extracted_sha256": "e41314aeb089c40b1b248ad34f7dde8c65fb8cc50babe501ce9a46a1c1c97a39",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_permanent_pass.py",
+      "source_sha256": "63289c349ec057d69af0922091a77e595cc976dbdd1bdb72e497ea6efb09ff3f",
+      "destination": "src/mooneural/training/generic_permanent_pass.py",
+      "extracted_sha256": "63289c349ec057d69af0922091a77e595cc976dbdd1bdb72e497ea6efb09ff3f",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_permanent_pass_executor.py",
+      "source_sha256": "73f32231b736791d45036cf91ac88aeeef86fbe62f4286f239ec0fa03452fe34",
+      "destination": "src/mooneural/training/generic_permanent_pass_executor.py",
+      "extracted_sha256": "026380dd4c3aaf84f17a4af804ca03371daab83e34178e872cdba942a0882b86",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_policy_coordinates.py",
+      "source_sha256": "5703ecee4909fd22009c4a03425d14700acf93769b2e9de61f1c8c9e025fc01f",
+      "destination": "src/mooneural/training/generic_policy_coordinates.py",
+      "extracted_sha256": "5703ecee4909fd22009c4a03425d14700acf93769b2e9de61f1c8c9e025fc01f",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_postproposal.py",
+      "source_sha256": "7c9d145b03b275cf2d8353da23ecab312ded2d26ea321594e57759ddc5a30f5e",
+      "destination": "src/mooneural/training/generic_postproposal.py",
+      "extracted_sha256": "7c9d145b03b275cf2d8353da23ecab312ded2d26ea321594e57759ddc5a30f5e",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_process_monitor.py",
+      "source_sha256": "8bb2c214d9ab119ce9304c65a7129e8c811696a028e7f5b702863caaffb99a60",
+      "destination": "src/mooneural/training/generic_process_monitor.py",
+      "extracted_sha256": "8bb2c214d9ab119ce9304c65a7129e8c811696a028e7f5b702863caaffb99a60",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_program.py",
+      "source_sha256": "aa2fe56a9313380b3a54c2fb7a5b002fb156dc476cd07ad6cb6a984e6bdd55dc",
+      "destination": "src/mooneural/training/generic_program.py",
+      "extracted_sha256": "8774209f17636f9378b3d30b2c7fc852e8363236a36bc831d873329eca315186",
+      "changes": "module namespace/source paths only; neutral consumer-owned program ID and plan location"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_program_boundary.py",
+      "source_sha256": "32af45d29e7493565e3ecdaeed08a3399c6ea7be3bb8ae738604b5a07ada05f9",
+      "destination": "src/mooneural/training/generic_program_boundary.py",
+      "extracted_sha256": "aeb40492a0d649fffeee9e4812217248984e2c9e277fc73002750be239bd8a01",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_projection_diagnostic.py",
+      "source_sha256": "3613914496115ed9154231b91c29038a225098d78b99a2db336d447a3cb87ff0",
+      "destination": "src/mooneural/training/generic_projection_diagnostic.py",
+      "extracted_sha256": "3613914496115ed9154231b91c29038a225098d78b99a2db336d447a3cb87ff0",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_protocol.py",
+      "source_sha256": "51fece9031973c7434c6a325a3c65d6c214c1c8517ee8f361e299446aa9d6604",
+      "destination": "src/mooneural/training/generic_protocol.py",
+      "extracted_sha256": "b99f718fc13fe353b1e4d169d80d7b40238d078b007179e631beb4211f46dbf8",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_relative_progress.py",
+      "source_sha256": "355f64ca7e88a0c8b267422c6126e8515143a5c95177bd7e9f9da5b41d98ae68",
+      "destination": "src/mooneural/training/generic_relative_progress.py",
+      "extracted_sha256": "590b41afd03d7952f140e1547da6a7870234aa99adb8be88be83f009f44102af",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_replication_calibration.py",
+      "source_sha256": "de2243e2dc8006a761d70a02b61988c6d69d2a756a5ade569a4143a82e99e66f",
+      "destination": "src/mooneural/training/generic_replication_calibration.py",
+      "extracted_sha256": "de2243e2dc8006a761d70a02b61988c6d69d2a756a5ade569a4143a82e99e66f",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_replication_design.py",
+      "source_sha256": "e212a79699231824794b0b078f006c62d530f031232874133e6630bd8eb09b5a",
+      "destination": "src/mooneural/training/generic_replication_design.py",
+      "extracted_sha256": "e212a79699231824794b0b078f006c62d530f031232874133e6630bd8eb09b5a",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_replication_master.py",
+      "source_sha256": "e8b393af07e762ad85e9242197da82ffc3919ba1494efab7024bcb09fc9860a1",
+      "destination": "src/mooneural/training/generic_replication_master.py",
+      "extracted_sha256": "e8b393af07e762ad85e9242197da82ffc3919ba1494efab7024bcb09fc9860a1",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_replication_policy.py",
+      "source_sha256": "2c0c2e8192c6027d53f3ea6413c16eb227bf286dc0cae81781f0f02c675538f2",
+      "destination": "src/mooneural/training/generic_replication_policy.py",
+      "extracted_sha256": "6ac346a77b3bf74853e43e0c7722808c290c04cb2130fc37a49c73a8cd1e54b6",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_replication_runner.py",
+      "source_sha256": "72b08151f8669d33da14d472225816a6a1bc22934ca97cd2062a855d53653f3c",
+      "destination": "src/mooneural/training/generic_replication_runner.py",
+      "extracted_sha256": "bda9b5e164ef4891b72aecc9b3870ff7ad5f2bf337f1a547de5b9be9d2d4761e",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_replication_statistics.py",
+      "source_sha256": "d1ed00ae2c2e10238face27affd6fa838e40b70c979e381f1f0606d46a7d2e68",
+      "destination": "src/mooneural/training/generic_replication_statistics.py",
+      "extracted_sha256": "d1ed00ae2c2e10238face27affd6fa838e40b70c979e381f1f0606d46a7d2e68",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_replication_training_protocol.py",
+      "source_sha256": "84cfb3ff8df61805bb3d75823f8f701109a0266d93e99ce5326edfb96c93a47b",
+      "destination": "src/mooneural/training/generic_replication_training_protocol.py",
+      "extracted_sha256": "84cfb3ff8df61805bb3d75823f8f701109a0266d93e99ce5326edfb96c93a47b",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_residual_response.py",
+      "source_sha256": "d967a82ee94212451f39b282d3568037bc24868d253a25ef2e51616ffb7529bb",
+      "destination": "src/mooneural/training/generic_residual_response.py",
+      "extracted_sha256": "d967a82ee94212451f39b282d3568037bc24868d253a25ef2e51616ffb7529bb",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_residual_subspace.py",
+      "source_sha256": "177099da719c32cf86531d285ffa6268442ac7d8fe99e0c0f93a82346f795146",
+      "destination": "src/mooneural/training/generic_residual_subspace.py",
+      "extracted_sha256": "177099da719c32cf86531d285ffa6268442ac7d8fe99e0c0f93a82346f795146",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_role_banks.py",
+      "source_sha256": "def7778847286aebb4028ae7ebd1bb0b3b7cdd2300d80c6163732b86c803ee00",
+      "destination": "src/mooneural/training/generic_role_banks.py",
+      "extracted_sha256": "def7778847286aebb4028ae7ebd1bb0b3b7cdd2300d80c6163732b86c803ee00",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_saved_input_contracts.py",
+      "source_sha256": "5289e035656a05fdbc2cef455fd16ea571aea0384b118347eabeb3e0171b868c",
+      "destination": "src/mooneural/training/generic_saved_input_contracts.py",
+      "extracted_sha256": "5289e035656a05fdbc2cef455fd16ea571aea0384b118347eabeb3e0171b868c",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_scale_diagnostics.py",
+      "source_sha256": "f83bbdfc2159bd087e486f7deeee651c6118702120cfcae2aa89737b741ac285",
+      "destination": "src/mooneural/training/generic_scale_diagnostics.py",
+      "extracted_sha256": "f83bbdfc2159bd087e486f7deeee651c6118702120cfcae2aa89737b741ac285",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_scheduled_role_banks.py",
+      "source_sha256": "182aa846e34ce0fd74afd2a40fa66ffed44549a34ab07c56a1bab58db2233939",
+      "destination": "src/mooneural/training/generic_scheduled_role_banks.py",
+      "extracted_sha256": "182aa846e34ce0fd74afd2a40fa66ffed44549a34ab07c56a1bab58db2233939",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_statistical_quality.py",
+      "source_sha256": "47ed00bca22188eae5e19fee1b1a3dc6516f7c94229d8c3d7724f3cb2a1be57c",
+      "destination": "src/mooneural/training/generic_statistical_quality.py",
+      "extracted_sha256": "47ed00bca22188eae5e19fee1b1a3dc6516f7c94229d8c3d7724f3cb2a1be57c",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_tensor_fixture.py",
+      "source_sha256": "cf7368b5837f6a9ed59b0648b532ffcdd7e90c09b5f826c1c5332baefb558002",
+      "destination": "src/mooneural/training/generic_tensor_fixture.py",
+      "extracted_sha256": "cf7368b5837f6a9ed59b0648b532ffcdd7e90c09b5f826c1c5332baefb558002",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_training_campaign.py",
+      "source_sha256": "56c5a1624a463f6af22054424049a9ceb04dda41da9f00e7aae548803f543a78",
+      "destination": "src/mooneural/training/generic_training_campaign.py",
+      "extracted_sha256": "56c5a1624a463f6af22054424049a9ceb04dda41da9f00e7aae548803f543a78",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_training_contracts.py",
+      "source_sha256": "49654f8bdeee69a87f0dd22eb5b958570bb52aa3be0b13791287dc8b36579b64",
+      "destination": "src/mooneural/training/generic_training_contracts.py",
+      "extracted_sha256": "49654f8bdeee69a87f0dd22eb5b958570bb52aa3be0b13791287dc8b36579b64",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_weighted_objective.py",
+      "source_sha256": "991037cb3ac39cff6e845aa4bad1334538626026a5f50f52b949d363efc0da71",
+      "destination": "src/mooneural/training/generic_weighted_objective.py",
+      "extracted_sha256": "991037cb3ac39cff6e845aa4bad1334538626026a5f50f52b949d363efc0da71",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_xla_kernels.py",
+      "source_sha256": "38492f85a5e8c6275a24087530130c1351fedeca24d31ade2efae01bb37553ec",
+      "destination": "src/mooneural/training/generic_xla_kernels.py",
+      "extracted_sha256": "df27f7bcf76f2f7efe2ca59dc948500804b51c68e589d26f844be9b7e89cf619",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/sgu_xla_moo.py",
+      "source_sha256": "e699f624bf36a25de45c58cf65e13881bbb78171da53f901e446ee068a9f2853",
+      "destination": "src/mooneural/training/moo.py",
+      "extracted_sha256": "b4502c4737a9033df46c57894dc32fa66737913f0322d74dde068a5d055a87c2",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/sgu_xla_optimizer.py",
+      "source_sha256": "50861d94972a66b95015f8b84ac3e76f966498dbdf25c87d91a6e8aecd3e28fb",
+      "destination": "src/mooneural/training/adam.py",
+      "extracted_sha256": "e2e297ab39d40d0da0fe73019c3b86534337abccf315728b6086dff07f05d94a",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/__init__.py",
+      "source_sha256": "22f5706d480b5de3eb9194e7f5c7523635fe627874bf39b225c6bb6dcac8a415",
+      "destination": "src/mooneural/multiobjective/__init__.py",
+      "extracted_sha256": "b320ee02282168abe0d4a2803782cdaad2a5a49901fb007bedb470656c5d589e",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/adaptive_controller.py",
+      "source_sha256": "63e0c4c6515843e24a872b591240ca0dd885ad119a8adc525bad8ec9d4b94583",
+      "destination": "src/mooneural/multiobjective/adaptive_controller.py",
+      "extracted_sha256": "861fd2dd70f66a3e44bc6efb025d1b1bc4dfc6ca6372762a304a8d903ce6092e",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/aligned.py",
+      "source_sha256": "fa222b0e521ac29bd22a3f174e44eecf9fe5e70a5a9974b47afe053ff49f80ce",
+      "destination": "src/mooneural/multiobjective/aligned.py",
+      "extracted_sha256": "fa222b0e521ac29bd22a3f174e44eecf9fe5e70a5a9974b47afe053ff49f80ce",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/api.py",
+      "source_sha256": "85fa0c67ac7788f6023bcf09ef60103c6d853a41f08b4283a1afc77733c06ea3",
+      "destination": "src/mooneural/multiobjective/api.py",
+      "extracted_sha256": "b3529951460d4b2dce07ea8df195496d2c18a650e960562bcf8aff226169fb46",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/benchmark_cases.py",
+      "source_sha256": "f424671c4f7d51b66cdb0c2cbab78eba3bd4781ec22505d49727aa58200db396",
+      "destination": "src/mooneural/multiobjective/benchmark_cases.py",
+      "extracted_sha256": "f424671c4f7d51b66cdb0c2cbab78eba3bd4781ec22505d49727aa58200db396",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/cagrad.py",
+      "source_sha256": "8268433d94fb353b7997c4dec82232bd00fb24442afcb36ff028de507e9e64ac",
+      "destination": "src/mooneural/multiobjective/cagrad.py",
+      "extracted_sha256": "8268433d94fb353b7997c4dec82232bd00fb24442afcb36ff028de507e9e64ac",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/diagnostics.py",
+      "source_sha256": "6daf16a6273a6b47f0a7fad81ea6a337c74ff8efb651a9f6b47c96e1995fd9fe",
+      "destination": "src/mooneural/multiobjective/diagnostics.py",
+      "extracted_sha256": "66268cd5029ac610060c8a0da41186221b8d8ed2e651250a31590cbc64bf1b3f",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/famo.py",
+      "source_sha256": "2d46a801916f9662424be5590d88ba03eeafb57e830ed1d2dbbe6667f090f798",
+      "destination": "src/mooneural/multiobjective/famo.py",
+      "extracted_sha256": "d6c696e786031c5c39779b3c4cfba0249ec6df8f206d0f6d4384e0f5a41fd9b9",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/flattening.py",
+      "source_sha256": "578814c8adde273edd04f4d00c8aef49e0af884a601b972a64b87c865c604b5a",
+      "destination": "src/mooneural/multiobjective/flattening.py",
+      "extracted_sha256": "578814c8adde273edd04f4d00c8aef49e0af884a601b972a64b87c865c604b5a",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/gradnorm.py",
+      "source_sha256": "4361091e9693c0f1ecade347f7f1853524a21150c54cbbd5b474d1db067397e8",
+      "destination": "src/mooneural/multiobjective/gradnorm.py",
+      "extracted_sha256": "ba3a838aef717688a1d5475fa1e019dacf54e15300529a998f88b2e028cf3a2c",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/imtl.py",
+      "source_sha256": "3a37b1f8ed804bfc899708d807654764e193c997f612c65893d71e9aa2310a75",
+      "destination": "src/mooneural/multiobjective/imtl.py",
+      "extracted_sha256": "3a37b1f8ed804bfc899708d807654764e193c997f612c65893d71e9aa2310a75",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/mgda.py",
+      "source_sha256": "e5b96692e37d20b6d2cc78758014b86b9b2bdeac89e80bf71ca9fae463852694",
+      "destination": "src/mooneural/multiobjective/mgda.py",
+      "extracted_sha256": "e5b96692e37d20b6d2cc78758014b86b9b2bdeac89e80bf71ca9fae463852694",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/pcgrad.py",
+      "source_sha256": "49b3252588e5f5765865426a8415cb620d24ca7a7a3577e38653b5077cf95898",
+      "destination": "src/mooneural/multiobjective/pcgrad.py",
+      "extracted_sha256": "49b3252588e5f5765865426a8415cb620d24ca7a7a3577e38653b5077cf95898",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/population_switching.py",
+      "source_sha256": "176af652bb8eac20529f567ecab6909b0bc275d52a3916acba67a2867e058f95",
+      "destination": "src/mooneural/multiobjective/population_switching.py",
+      "extracted_sha256": "176af652bb8eac20529f567ecab6909b0bc275d52a3916acba67a2867e058f95",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/types.py",
+      "source_sha256": "018bc9840c5cb48e52837af6559ac8e4d95590bd0788918e4af06380fb6a0169",
+      "destination": "src/mooneural/multiobjective/types.py",
+      "extracted_sha256": "018bc9840c5cb48e52837af6559ac8e4d95590bd0788918e4af06380fb6a0169",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/common_utils/tf_multiobjective/unsupported.py",
+      "source_sha256": "02541451e76072047abcd2aab1963d400fe5b1238d6cf53edbbee83949850435",
+      "destination": "src/mooneural/multiobjective/unsupported.py",
+      "extracted_sha256": "032a254b458d0156ce12ab085fef47612d81a8f7b11c22d44239eebf3c086692",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/experiment_runner/artifacts.py",
+      "source_sha256": "99eba2e1f145caa35083a5e09b237010e64901e8cccaebb3c2021eb2c1c24d30",
+      "destination": "src/mooneural/artifacts.py",
+      "extracted_sha256": "99eba2e1f145caa35083a5e09b237010e64901e8cccaebb3c2021eb2c1c24d30",
+      "changes": "module namespace/source paths only"
+    },
+    {
+      "source": "src/dsge_hmc/training/rotemberg_working_set.py",
+      "source_sha256": "b8196454b47a956bac88e318901dc954ea968c54fa291df140b6f16d458b597e",
+      "destination": "tests/support/working_set.py",
+      "extracted_sha256": "d2721cc09c452234a01dfb43cb9a5e8cf9da8d443f23f0e54fd2d39f94d340d0",
+      "changes": "test-only historical comparison implementation; imports use copied label constants; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_permanent_pass_validation.py",
+      "source_sha256": "781b6f2234fde80005918756a8bbe9c7117bb199c54b98c8258c90b41f441848",
+      "destination": "tests/support/fixtures.py",
+      "extracted_sha256": "bf51abdc610ffaf3d8eb70f38daa0d0e7db0f50f1442644141b612f63bbdb3b4",
+      "changes": "only the unchanged roles/fake_control/fixture functions; absolute MOONeural imports; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_augmented_subspace.py",
+      "source_sha256": "9c1e0c48f1f4e3e302fe15818a29f315a9764c350cc65c965f657752fab39aa7",
+      "destination": "tests/contracts/test_generic_augmented_subspace.py",
+      "extracted_sha256": "d051b474ec19e7fafd33442c0f3d45ba5d6e249838561ab4c69b209ac4aa8437",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_campaign_incumbent.py",
+      "source_sha256": "305cd9042dfc0166864945888ae530157dcdbada182aee2776c0b3bfa1136be0",
+      "destination": "tests/contracts/test_generic_campaign_incumbent.py",
+      "extracted_sha256": "9bf281600f94e56797c122b7ea078d0dc802fc260a75097c7d9c86c9f67a0291",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_certified_numerics.py",
+      "source_sha256": "d193f2d7aa7967d1f2d026e300485e0fb5f074e7f20a8da6aa6bab159b75d202",
+      "destination": "tests/contracts/test_generic_certified_numerics.py",
+      "extracted_sha256": "22bb8c8490e184f022938539054232c9ed65aa6e9b07434cc21cb1b10ca530f0",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_checkpoint_continuation.py",
+      "source_sha256": "e24450c10882f66c593e9591348dab1f81d2e056235e23e1e6b2a12f60e04e8e",
+      "destination": "tests/contracts/test_generic_checkpoint_continuation.py",
+      "extracted_sha256": "f0d324cfafc934eb4ea4af30547d7b36f470ef785d93c2f3290657334d0f145a",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_complete_cell_components.py",
+      "source_sha256": "4c82aa87e71d221849049c3a3d73f5bc798fb216dfef542384bfa6bd11b46f97",
+      "destination": "tests/contracts/test_generic_complete_cell_components.py",
+      "extracted_sha256": "fdb496029b41b1c98410af9550fcfa57af727cdf2aede18a1631a290076dc188",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_complete_cell_policy_transition.py",
+      "source_sha256": "c886a39f2d5462486c1e3f91512dbb2b726f287573d39c3cdd65e7be35f33307",
+      "destination": "tests/contracts/test_generic_complete_cell_policy_transition.py",
+      "extracted_sha256": "f456af1bedb993a25130b8284d4e2c6d289c51576ffa2030904c353c59ea55d9",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_component_descent.py",
+      "source_sha256": "1ea0c098d1584dc0abf5601df47edba9e40e558a26c8a7129cd577bb6d9fb3d9",
+      "destination": "tests/contracts/test_generic_component_descent.py",
+      "extracted_sha256": "31c8dc9ca634c146668cc564a79b5f4190c81f23333e23861524da31334f2eac",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_component_policy_refinement.py",
+      "source_sha256": "8d1260a64a23fde56ce243fd0e43102b7afcf69b10a218ed42eff685158f84e5",
+      "destination": "tests/contracts/test_generic_component_policy_refinement.py",
+      "extracted_sha256": "bd916ed4dc5db6155ff64c9f6ddb1e628db7cb2763af53f10a3e7803e84ba9d2",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_component_rate_continuation.py",
+      "source_sha256": "e53b4f11fd1cdb0907c45018f2c3402b3b1b17ab4dcdb31625aa78cfa603e3ff",
+      "destination": "tests/contracts/test_generic_component_rate_continuation.py",
+      "extracted_sha256": "be1a30876cefcbe0b42bff9be319da292bdc2d329bb0a91abb4f87754f7eceb4",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_conditional_expectation.py",
+      "source_sha256": "77296ec1c9e781aa0f475d5c195ae5b3939c6dd2f265af9fccd4a7434024dbcf",
+      "destination": "tests/contracts/test_generic_conditional_expectation.py",
+      "extracted_sha256": "bf7df88d2cc3641ba1bbd86eafd5d2d75fbb94901886573cd2b99d95982d69f2",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_control_evidence.py",
+      "source_sha256": "9249d198b2adb0429485cb968edb217c9d0884b5c0e574ae5d5689334c8292c8",
+      "destination": "tests/contracts/test_generic_control_evidence.py",
+      "extracted_sha256": "11bc4e737a4cd41c85ecadcc8d67f2a317024bf7391e9ccefb88ae204da3736c",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_coupled_component_guard.py",
+      "source_sha256": "0895ac66996fa9e098d294821047d5c53fdd8d5da039b167ade75e90d909774c",
+      "destination": "tests/contracts/test_generic_coupled_component_guard.py",
+      "extracted_sha256": "76d1145be4b54e77f6892ada96d31943ec59a39d0763c1787dadef39825f61bc",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_coupled_component_transition.py",
+      "source_sha256": "eb6d8d5643d7a16f74ec70e62b7a5a1cbc16b2f6bd7d156e5b3c9945cbb06f6a",
+      "destination": "tests/contracts/test_generic_coupled_component_transition.py",
+      "extracted_sha256": "c39a55c903163acadb00002823f06f62db520740a1b86f4bee7b05e231d25c35",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_coverage_initialization.py",
+      "source_sha256": "99a07996afba4b4be01fadbcee1a18d5a2517dcff4d827e9965d213d4850ca82",
+      "destination": "tests/contracts/test_generic_coverage_initialization.py",
+      "extracted_sha256": "9bbc5ae092f86032d592807494e317cef38df2648cf6e2d6293be101b0c1ccf6",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_coverage_objective.py",
+      "source_sha256": "8edfbb23b4def69f4c912d3dc422056cffdc4fe8c4c088c85f7e5962ac473d0e",
+      "destination": "tests/contracts/test_generic_coverage_objective.py",
+      "extracted_sha256": "3a7b49c28f415d8b35799361c78a902baa571e005b006200a2d76b09f611474d",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_coverage_runner.py",
+      "source_sha256": "715f8d5fdd14f6ef6825fcbb838844e6338b59e7d045019565fabaf657d7d150",
+      "destination": "tests/contracts/test_generic_coverage_runner.py",
+      "extracted_sha256": "2d902b164a72905dc457fa5aeaaecd3312b015e92874fa828f4e633d2a413bdd",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_curvature_progress.py",
+      "source_sha256": "0180fb0b50d6f251c1a0f478a91dddf5f7fe098f41a2aed5898c2545550eed1a",
+      "destination": "tests/contracts/test_generic_curvature_progress.py",
+      "extracted_sha256": "927201db233bff19b2f74f8501e0b7ca581943d6b2213e40fec81c063b00c32c",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_derivative_warm_start.py",
+      "source_sha256": "c9fe029ababf02246755117d917d36ba6f64bce94730cbe08dafddede62d19f7",
+      "destination": "tests/contracts/test_generic_derivative_warm_start.py",
+      "extracted_sha256": "25f63ed3470d4a4e310f95bccdda886b7df6319f788098e802342df25777467c",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_displacement_blend.py",
+      "source_sha256": "a32f27413f4b16435c37ecaf4358a450132419e00e2f497b3f6a7440ee173c65",
+      "destination": "tests/contracts/test_generic_displacement_blend.py",
+      "extracted_sha256": "952b3f8adde72ddcd9a7db78b4067518b3893ae09b435011885d6034cb336384",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_estimator_transition.py",
+      "source_sha256": "b03068c7366399608d79504b570220b0c0877fbe48fea34e9749f4df1264d881",
+      "destination": "tests/contracts/test_generic_estimator_transition.py",
+      "extracted_sha256": "e62288a6aca02bb80aa91d1cf5f6eea403bb7aa2d2cbade7eafd0640837dce58",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_execution_boundary.py",
+      "source_sha256": "b05eab3b148c4e4ae87a2a72c687ae5b54fa16a70255b3cbcef5a364b783f71e",
+      "destination": "tests/contracts/test_generic_execution_boundary.py",
+      "extracted_sha256": "ae3a773d9620fba82661ed2cace06e365e8c507c8044130104b30453a42cd173",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_finite_component_fallback.py",
+      "source_sha256": "487a5f4cf49107b1c225e49a65670114344f4c6facc478d4e2ad6270aa1e077a",
+      "destination": "tests/contracts/test_generic_finite_component_fallback.py",
+      "extracted_sha256": "40319989845f4b0ad1bdce4a5e1efad504e38bc812aa09427f2b0fb33115496e",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_finite_component_policy_transition.py",
+      "source_sha256": "b42623861de55fc49e27a8d03d70f445bf37e3b75d1c4a7f75fedc41917c1309",
+      "destination": "tests/contracts/test_generic_finite_component_policy_transition.py",
+      "extracted_sha256": "2a9234a413ed1d530b747c485cc4b56661640b2b9716cef245038b982525a95c",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_finite_objective_runner.py",
+      "source_sha256": "609dca636c4e87980b4cd9c201e9b439ce70a95f4852140c5dde6d14e89bfe17",
+      "destination": "tests/contracts/test_generic_finite_objective_runner.py",
+      "extracted_sha256": "8cbea249b4f3872ff42ad62516b31303a0c71725dbd812424f2ea9cd9c1e9a76",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_finite_selection_transition.py",
+      "source_sha256": "e582e9af91d9db5e44889e39adbcc7878c61263f3ea723955d7ecdadbf5496b4",
+      "destination": "tests/contracts/test_generic_finite_selection_transition.py",
+      "extracted_sha256": "2edafca4d11cb6b3ceda2f9436e757478a188187030681f309988a5ebe1c06fe",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_fresh_method.py",
+      "source_sha256": "d0a5e23ac27577378dab92b8e1fb6174e69a3c4e85a65c9a756a0ff600790634",
+      "destination": "tests/contracts/test_generic_fresh_method.py",
+      "extracted_sha256": "feb2dd24c457c67825018b953b72e089c192c7e275b875844331a37a1bc4b018",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_grouped_components.py",
+      "source_sha256": "abccd2d313d716fc06c03069df6d67c5adfb174b4e519141792ebcf23e95cdbf",
+      "destination": "tests/contracts/test_generic_grouped_components.py",
+      "extracted_sha256": "2e63bca6f8d6f20a5553f06f3feb81b683210ab9ebb2982b04acc299ed6a3a09",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_grouped_objective.py",
+      "source_sha256": "148f5b0def10435efa6228f8176416cb43e5455ff3f9ac344538b7124a93cd61",
+      "destination": "tests/contracts/test_generic_grouped_objective.py",
+      "extracted_sha256": "f5be6fd1013d21fba95138b24e084e84e1ce644598f87450a0cb589851f85364",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_grouped_role_bridge.py",
+      "source_sha256": "5c63a2bb8edf2bba4e18cfe925e6c5f2b50ffb721b4de1f788ca3b7f04c10c67",
+      "destination": "tests/contracts/test_generic_grouped_role_bridge.py",
+      "extracted_sha256": "23cc8ac8e06b1b62844dacca494b40649ec585719a4197dbc9d44ad232065887",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_guarded_method_continuation.py",
+      "source_sha256": "08ac1a0d0263e53f4f48b93d8730ba0bcfefeec7beacf5ee3dc358ed2cb3c351",
+      "destination": "tests/contracts/test_generic_guarded_method_continuation.py",
+      "extracted_sha256": "0465868d070a69c7a369ad8b55eb8c164a5739569dda35010d7cd894d66485ef",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_independent_role_bridge.py",
+      "source_sha256": "c0516e801f5796180eac47f86680d112a7d39d5e13f2e4a49742a761ca9500cf",
+      "destination": "tests/contracts/test_generic_independent_role_bridge.py",
+      "extracted_sha256": "34d4252d003900ff7447acbdcad7768f72a6ecbbf0f358c5c87a488ced6fa6ce",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_learning_rate_transition.py",
+      "source_sha256": "b1d21bdf7a07770109ccd1070e9d058c8234a1856432b290d6c6e51133a3773b",
+      "destination": "tests/contracts/test_generic_learning_rate_transition.py",
+      "extracted_sha256": "5696a21302c629c150ec1639206e12c91d44d5a2f364f2e4c1c1c2a8a9efcf51",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_live_role_lifecycle.py",
+      "source_sha256": "c75e777b4da229d0b4ce57d58fcf8f6709d1aa50109f92f3ef9f2f682b33b486",
+      "destination": "tests/contracts/test_generic_live_role_lifecycle.py",
+      "extracted_sha256": "a209cdf90229696c3776fe52d043fb23d806649d2025b806f6c410ac5bc7533b",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_model_task_executor.py",
+      "source_sha256": "30e01ac442609d8589affc7c5b5b67c46308b9cc6d90649420ff897b9be37c93",
+      "destination": "tests/contracts/test_generic_model_task_executor.py",
+      "extracted_sha256": "e0eee49199efdc4b4f3434bd73460bdea99c44d6a3689f31a379a03a9992303d",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_native_projection.py",
+      "source_sha256": "735edf927f1d1a0cb9a570b909f5096b220645fd8fbc893a87ac7d03c79ac728",
+      "destination": "tests/contracts/test_generic_native_projection.py",
+      "extracted_sha256": "a0927533880fc248cfc1a4e3529a010f9abe1f79525dc18f2000f6f41c16be8a",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_nine_task_capacity.py",
+      "source_sha256": "37e775a92350d49a0644921738db7dd1c8ee5d991acea502edc52c5450f631df",
+      "destination": "tests/contracts/test_generic_nine_task_capacity.py",
+      "extracted_sha256": "cfa203ead6b3b936c08f2ccbb0f96ee3c1a03241183ec1f381d8b0d524a062ee",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_normalization_requalification.py",
+      "source_sha256": "270b87aad52d3cfdcdb4205218c07fbe210aff7efe20b0902187144d2abe8b96",
+      "destination": "tests/contracts/test_generic_normalization_requalification.py",
+      "extracted_sha256": "cd075fdae9490ac632392050c67793b92c9e090f050ae85ede120f3cd0d1c43f",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_parameter_normalization.py",
+      "source_sha256": "b3c6daaaa78540cecdd20a1ad48a0851610c0ea25a67e2f304e19dd6fddaed01",
+      "destination": "tests/contracts/test_generic_parameter_normalization.py",
+      "extracted_sha256": "eb6899656d13af5e3fa864f2309455c4a39bb75b014d92b10790b0fe7159a440",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_partial_continuation.py",
+      "source_sha256": "609546ee91e67ef93e899c42d133c164aa301a9289a1f9d67d8c7e768d803ea0",
+      "destination": "tests/contracts/test_generic_partial_continuation.py",
+      "extracted_sha256": "18c8ce62e44b19cd1b19b87d73ec275fec395540a37e9c69eeb232233697b641",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_permanent_pass.py",
+      "source_sha256": "def41deb1186162877efafa705d88979c2fec47832dbe09a900fe2440001c4ed",
+      "destination": "tests/contracts/test_generic_permanent_pass.py",
+      "extracted_sha256": "26072420c8ad20e6a698854e2b7d393737ebabec73c69d17d4d50cf58e8ba1c1",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_permanent_pass_exceptions.py",
+      "source_sha256": "6c8013f401d3c695391bca5b68d8e4c5c42d70b3cf570902e9350b32a201830b",
+      "destination": "tests/contracts/test_generic_permanent_pass_exceptions.py",
+      "extracted_sha256": "0997f7aa9f7abe59c4e4c9fbc37370fc56850250c7fedb18a825a1d5af57d77b",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_permanent_pass_executor.py",
+      "source_sha256": "259cfe9610af3dea687c7a21d58880d407bc819cf67184aee4397dc55089d86f",
+      "destination": "tests/contracts/test_generic_permanent_pass_executor.py",
+      "extracted_sha256": "f531a4542b753ebe371ea97356dab3154858b38fe226f1ef8c2d1bd481602106",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_population_selection.py",
+      "source_sha256": "6b5e7123c39326d9b39411a8aedcae64f2f0b8a84d5ccb103049dd82f58a4a90",
+      "destination": "tests/contracts/test_generic_population_selection.py",
+      "extracted_sha256": "d37a8e86e4c22e96033ef9814126524e039493404ef8d5cadb7da5c10b9cd4bb",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_postproposal.py",
+      "source_sha256": "097a84ad1c3964842260c80a91bdce37ab0a2f0f1ce5019d39a8ee2a775d5663",
+      "destination": "tests/contracts/test_generic_postproposal.py",
+      "extracted_sha256": "f9150d054558ba2946d220d85c8e5f0cace7ea72ff93b255afbe8b276a24e9ae",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_postproposal_continuation.py",
+      "source_sha256": "32bb4b5d292943a96452272224b4fb6e5b1de7184bd8209a73e9915e04fe1bd0",
+      "destination": "tests/contracts/test_generic_postproposal_continuation.py",
+      "extracted_sha256": "51c83fdb208a13943565689fc9383bbf26111fbb1064a55ead3d0ce43dbee5c3",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_postproposal_curvature.py",
+      "source_sha256": "8481481e08bb6da18c847816611c0db81822c3fa2e151083b5d8b9058f0efae0",
+      "destination": "tests/contracts/test_generic_postproposal_curvature.py",
+      "extracted_sha256": "3ccfda01bd420ee3ed6632eea6cf52a033a249d2e43be6f774318e362be58740",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_postproposal_lookahead.py",
+      "source_sha256": "570000bdb5f36c7ad7b34d1457df1f851162fda278d82a6607394202c1febcea",
+      "destination": "tests/contracts/test_generic_postproposal_lookahead.py",
+      "extracted_sha256": "f1efd1e663235f26706f7824cf12668d7c3accd9406863159708572a8f9e9d64",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_postproposal_policy_transition.py",
+      "source_sha256": "c62b40fb7be4208168873cb14c0bc963039f26b4ada9ee48f10561db1f492323",
+      "destination": "tests/contracts/test_generic_postproposal_policy_transition.py",
+      "extracted_sha256": "9d37261bae6e748af44f514a410b057ba32e827a1c5bb9a89e5dff94c9e0af76",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_preferred_method_transition.py",
+      "source_sha256": "5f60a76b069dbd2a4be8fa3c281620b13d067d63ecc65c0f0ac0e095f22b8ca7",
+      "destination": "tests/contracts/test_generic_preferred_method_transition.py",
+      "extracted_sha256": "7caaec12d4d5a5d0b4cfad97ba0e6beca0ff23765e9f9534f59a8a7fe7467832",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_process_monitor.py",
+      "source_sha256": "f704116c599db0d4e01ad3c4cd2b983be2b0e33c7aef24e1ada8ed71a03e506e",
+      "destination": "tests/contracts/test_generic_process_monitor.py",
+      "extracted_sha256": "80aca50fc7d9f530ba7a232ed6de41e285820d89250d28ea58f52e528ca127cd",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_program.py",
+      "source_sha256": "7c31efb6ae3d9beba9b2e6eae0a0c0fbef5175a2ecc708eef5826a9ace0ab581",
+      "destination": "tests/contracts/test_generic_program.py",
+      "extracted_sha256": "d95779942f56d5a68793d161c9d6729afd262f9a6640891f8bd931f9f111dd52",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_projection_diagnostic.py",
+      "source_sha256": "733e7410850c68f36f772563db20c95aa6fa6ba2b4b525bee699949afde9f55c",
+      "destination": "tests/contracts/test_generic_projection_diagnostic.py",
+      "extracted_sha256": "3440950efb693805ea63419148b15074fbc31963729531f998941efa2edc0e99",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_protected_descent.py",
+      "source_sha256": "babaa6b99e5bc23bb74f0bd6c36ef7b8786038ebb3cfce8f8a0d1c20db50d653",
+      "destination": "tests/contracts/test_generic_protected_descent.py",
+      "extracted_sha256": "1bc1a1a39d7a18dcdfc21d65fcf16c0fc880aa45d52a91e6c6f3342ee9e3d3c3",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_protected_descent_transition.py",
+      "source_sha256": "1ec3fd7f3b960d659c83bc5abf62c15286909bdc0de3b44464995b1aa68f4fdb",
+      "destination": "tests/contracts/test_generic_protected_descent_transition.py",
+      "extracted_sha256": "5d7f73efd4bb9a14ff19ec1d40756850c20e6a4da866504ebab5653dae3726d9",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_relative_progress.py",
+      "source_sha256": "5e0d4a084c885995c44647740e7147fe9348eac4cf400a6498d1c41fc70cdbfc",
+      "destination": "tests/contracts/test_generic_relative_progress.py",
+      "extracted_sha256": "0aef1afe10759b25d92fbe97db63d2ca3407b58031093fabb257496d6d64d216",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_relative_progress_guard.py",
+      "source_sha256": "90e67554a3d1b2769e8a178b6cd96be6b55775b3d523a8a922f6e97848d14767",
+      "destination": "tests/contracts/test_generic_relative_progress_guard.py",
+      "extracted_sha256": "15bf31ab194ec09c280645f227e9d4a53a2435719db14e659cf307a6e2a3dd12",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_relative_progress_transition.py",
+      "source_sha256": "4f0dfe0db86a83f02abd0ba2e358008f07b72c7502e6a6b54ce7f46f9159fad2",
+      "destination": "tests/contracts/test_generic_relative_progress_transition.py",
+      "extracted_sha256": "fb0c897037336ff0f3334dd89ac65bab325692bb7eacf31a5b6751da11b40303",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_budget_stop.py",
+      "source_sha256": "81ed7c85724d383c18c492efae2496fee22c14883b330a5765df2072b91e3cfb",
+      "destination": "tests/contracts/test_generic_replication_budget_stop.py",
+      "extracted_sha256": "d3320d8ba4deabb2f819dcfcb7e0d4d558104dc96b9471fa438b65015fc71c78",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_calibration.py",
+      "source_sha256": "90c8c8243528ed60ca20e7a5cf53813ebdf6bd610b0c6eed5d119012ac0a9def",
+      "destination": "tests/contracts/test_generic_replication_calibration.py",
+      "extracted_sha256": "8d22843a13b3b34ce0abc5fcadc2231f114b37d8367a149df1069427fe2216a9",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_design.py",
+      "source_sha256": "b7a46fffe42a8687cc2279a59103b9abc2efbd237044d1f8618f423adef951a6",
+      "destination": "tests/contracts/test_generic_replication_design.py",
+      "extracted_sha256": "4ddd498898fe5882bec628a2ef8b61b40052404fce11cbcd3b773511ea849445",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_pause.py",
+      "source_sha256": "7d547e92f7d54f5ba789f0f8bacb8a47a141435111e0e1013cce1760050be6c4",
+      "destination": "tests/contracts/test_generic_replication_pause.py",
+      "extracted_sha256": "1ae4438d76703b353a5d990a21490afb39b3365b326b09a7a131e6059c925f5f",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_policy.py",
+      "source_sha256": "5dd270dc540af2f6e078f65dcabcf26809187721b0dcda86e916ce11fa91e817",
+      "destination": "tests/contracts/test_generic_replication_policy.py",
+      "extracted_sha256": "2da58f8ddcb351af640a6c4b96352b90a75f254fdea1e3fb8578f12b6cfed4d7",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_runner.py",
+      "source_sha256": "92bfdd334e1a05534dfdbaf4203f5e5429f8c68aff1ed7f81e02733645f1e60e",
+      "destination": "tests/contracts/test_generic_replication_runner.py",
+      "extracted_sha256": "10523591049f554e746b8c884226bc47e2cb14a7955d742512f82f323d9f0389",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_stage_entry.py",
+      "source_sha256": "9042281e6c77448c1aeb27ec55ac423096595420d836b5df3a01f9cd6ba9f727",
+      "destination": "tests/contracts/test_generic_replication_stage_entry.py",
+      "extracted_sha256": "72420db5ee7b51b83ed47e665f11c91eda82c21479027f7e98e55e1d4cdc8ecb",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_stage_exit.py",
+      "source_sha256": "aeb673c414f04a8f2d4f26b3707b34f6cf3eec2d32fb4c293f7c991de39e7ca6",
+      "destination": "tests/contracts/test_generic_replication_stage_exit.py",
+      "extracted_sha256": "5704679ca33f7cdf4f8bfde280834a88e89105056e3b7175b38b31fc7c9855d0",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_stage_transaction.py",
+      "source_sha256": "6b09f86a5abc8cf714ac1abc8559eaf798aea345d19d839f402783f9f79cf571",
+      "destination": "tests/contracts/test_generic_replication_stage_transaction.py",
+      "extracted_sha256": "9302a174de9bae30f1c2b4653bb50be77e5deeda9a953453940464cfbbc75b8e",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_statistics.py",
+      "source_sha256": "2bf7f6f61b249236c6e6abca5c0fdc6007552d6da42106ee5814bd858eb9ace0",
+      "destination": "tests/contracts/test_generic_replication_statistics.py",
+      "extracted_sha256": "986fc3dfa791fd49d3da4f4507862ca7efe797059bbfdbfeb14a8a9f72bebf36",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_storage.py",
+      "source_sha256": "dd1be389bf26ca15389eff3a7c67a6f8eceba3d70a0276fe2c81b82f8de9a8df",
+      "destination": "tests/contracts/test_generic_replication_storage.py",
+      "extracted_sha256": "b65cb0f615005eb80f816915c28e100411c4877299b9b3cf521ed6f986967db4",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_required_component_progress.py",
+      "source_sha256": "54da4acee371b4cbd441559a98c47062b45eb8cfe5b99ec989749b2b489113d2",
+      "destination": "tests/contracts/test_generic_required_component_progress.py",
+      "extracted_sha256": "bb5fb63b0d3bbc1224af727d71d963b04c66d48cb7a5bc59452ed9210dce3930",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_residual_response.py",
+      "source_sha256": "e7ec45884be08a30f251f1c1c6e095175d38d70ee91b68b974e009ef3b851868",
+      "destination": "tests/contracts/test_generic_residual_response.py",
+      "extracted_sha256": "c835668f9c43156a82f671c80119fc6820b5deeae830ac1a3e4cfe503e93e3f6",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_residual_subspace.py",
+      "source_sha256": "325600764eb550fd7abe716f18e1b901de37678d74bebb4e4ae553b101684914",
+      "destination": "tests/contracts/test_generic_residual_subspace.py",
+      "extracted_sha256": "9d3f94a2894e0d1ccf8a484c75fcf117b187ed293ea331f954a7c5462c0025ea",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_role_banks.py",
+      "source_sha256": "38fafe7fa08ac3947db2b92fc53a7024acd3e4655023bdaf1a5722c73a5f1cd7",
+      "destination": "tests/contracts/test_generic_role_banks.py",
+      "extracted_sha256": "64afa0e26e5044865fda5f10fda1a96af391b482ce9c86aeca11450fbf383865",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_role_coordinates.py",
+      "source_sha256": "76962edb90f6ec150228379d4444553e03f6c0a9a4e5a96b729d53662d4d2939",
+      "destination": "tests/contracts/test_generic_role_coordinates.py",
+      "extracted_sha256": "c434ad072eb38c89bfca71de2944a594e25205d92230a31896eb966e72775100",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_saved_input_contracts.py",
+      "source_sha256": "db0fa0b2727792ebd0aabc5043d577df5a6d3bf26347db18befe1bb761933753",
+      "destination": "tests/contracts/test_generic_saved_input_contracts.py",
+      "extracted_sha256": "19e2c4cd9cd9b59bceaa302a0988fd9cde5843b5ed3f38272231f9db853455ec",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_scale_diagnostics.py",
+      "source_sha256": "e7982243f0dcb67abb532566f1a82d7ccbbd819cdb667d25e4db7adf85d1c37c",
+      "destination": "tests/contracts/test_generic_scale_diagnostics.py",
+      "extracted_sha256": "c7a19569b0bbeb8de7d9b0a47cf6d4aaebc00c0f7085614a4fbf6badebb72b52",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_scheduled_role_banks.py",
+      "source_sha256": "b29d476e24842ea1856eace6afe53d53f3ee66df05a3a2971060fa45c40a0d92",
+      "destination": "tests/contracts/test_generic_scheduled_role_banks.py",
+      "extracted_sha256": "81f2d029b8698febf8a1b7e0274c1ad0a6a56bddb2bdc2f52a87353d4656c97b",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_search_profile_transition.py",
+      "source_sha256": "647e73bcc9863cc0bc95d7dd6e36c02988db3c678475c19e991c94e3ca747f73",
+      "destination": "tests/contracts/test_generic_search_profile_transition.py",
+      "extracted_sha256": "0b72e9c6038d24961c5b11fbe83df4eab1f9d08aef7bc7300f29321fe9448391",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_target_refinement.py",
+      "source_sha256": "f0c081a074ffbf2f955d0c36c1937376973df06d74c7623dd0a86fa4d5e64f7e",
+      "destination": "tests/contracts/test_generic_target_refinement.py",
+      "extracted_sha256": "75f64261751fe55e244730aeb0230fe41597c8280d80ad16bbfc74b049386a54",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_target_refinement_transition.py",
+      "source_sha256": "e8f49d136217d8ef55373638324d5dd90fbdcee8ce343fb7a5648d251fbf3066",
+      "destination": "tests/contracts/test_generic_target_refinement_transition.py",
+      "extracted_sha256": "d4ac11a3923dac8f804d659476aef657b791d1610fe74bcbe62f89ef119dd664",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_training_campaign.py",
+      "source_sha256": "2315e4ccb7ad68fb6e79949e5da3912a6e72f8c7ae76e960aeb0f3413f4a7f04",
+      "destination": "tests/contracts/test_generic_training_campaign.py",
+      "extracted_sha256": "39a5388cfb72b2ec8243f0ad4469fd6bb58fd37ff4fc44e3aac71f20c218d198",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_weighted_objective.py",
+      "source_sha256": "b0a74b06f10fe559df2b5df9154cb8ee6aaeb8ce35a95face936f37377202c8c",
+      "destination": "tests/contracts/test_generic_weighted_objective.py",
+      "extracted_sha256": "23b11744c090fd768987fc19b8fe2c1f561d1d5e257f85829e3edd8d6d0958b7",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_aligned.py",
+      "source_sha256": "5c9d4c4ce671c47c86b29c2b5b1194717708ba4e634f6c6ff737449e34998d12",
+      "destination": "tests/multiobjective/test_tf_multiobjective_aligned.py",
+      "extracted_sha256": "98e7cec6ad4f2c8f41746c04cc0ca92ebff4c25f762d250bc5f0e67f5b8e39ed",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_cagrad.py",
+      "source_sha256": "ec222bb259a331f41631e0f05cd81f13f102f172d6e9e72073bf2c2c75cc77d2",
+      "destination": "tests/multiobjective/test_tf_multiobjective_cagrad.py",
+      "extracted_sha256": "c59cd21224100efbebe72e143382dd29de9229c4f7dfc16f6b17faddda0d5e8e",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_cagrad_reference_parity.py",
+      "source_sha256": "780502cda3383dbb8e562f5cddf2009228aa90aedb1aa505d13de6b85df74235",
+      "destination": "tests/multiobjective/test_tf_multiobjective_cagrad_reference_parity.py",
+      "extracted_sha256": "12a9147b32f8a23e81fd681e7112649797faaaa453d746495c5778251efa1e6a",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_diagnostics.py",
+      "source_sha256": "5d9ec4301aa68a9d4af8e3f5122d2ed1e52c7d4695bcc9a8eb033b092d8305e3",
+      "destination": "tests/multiobjective/test_tf_multiobjective_diagnostics.py",
+      "extracted_sha256": "d50098b04b943effa07b11b9d50c41303729b258ba2137b9fd5a8925b4e5bb91",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_dtype.py",
+      "source_sha256": "7a429a90c971e7b7b91bf4e1a5189972bb23610f409ddb4d525016ea539fae12",
+      "destination": "tests/multiobjective/test_tf_multiobjective_dtype.py",
+      "extracted_sha256": "497a3931cd7c7d02554b2f0943753ce2f0eac3bc4e006eb920efb40dafe81261",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_famo.py",
+      "source_sha256": "93b11a83747d08a17f98c28ca2bbd6119a6d09310fd2f45e8f480cd25f2dfba8",
+      "destination": "tests/multiobjective/test_tf_multiobjective_famo.py",
+      "extracted_sha256": "220aa438ca70527bd5afd35cea3e45cd78d9a2f05ace7b7b95e3f1cb2eb47f03",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_gradnorm.py",
+      "source_sha256": "af1981545339f949d7732e180eae27522e76806ded8a1767ddf9eac209699f59",
+      "destination": "tests/multiobjective/test_tf_multiobjective_gradnorm.py",
+      "extracted_sha256": "423113b96c87fc4060cec7d062fc1dfc8ee897910c958676641714160fbb192b",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_imtl.py",
+      "source_sha256": "251195e2e58b74508ca3e6509eeae4abede217fd55f3bdeb147aaf9526824606",
+      "destination": "tests/multiobjective/test_tf_multiobjective_imtl.py",
+      "extracted_sha256": "2d224e49b2335256e2a47a7df86c06f4d3ca3d85913ea3939db0d63d887f0300",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_mgda.py",
+      "source_sha256": "196c04d5c1880d64d66e1125858f90ac00d30220f221ce0e60319e881afb550d",
+      "destination": "tests/multiobjective/test_tf_multiobjective_mgda.py",
+      "extracted_sha256": "9e0ba1f4d40747cea03b5f3af0ea2ecaf46e4ae52d1430a284a7b95a961584ec",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_pcgrad.py",
+      "source_sha256": "d958258b18236965136d0a5e714dc87efcd67587f20a6e6ed6f9f48d34ab52ab",
+      "destination": "tests/multiobjective/test_tf_multiobjective_pcgrad.py",
+      "extracted_sha256": "0577b5a1afdd640cd288008183585f087fb43b6aabfd26fe14ca1aaa781423ce",
+      "changes": "namespace/path relocation; test-only factories/oracles; known obsolete cache mock accepts method_factory keyword; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_policy_coordinates.py",
+      "source_sha256": "34b209c92e3e678978d4b89140ec7658530326d27613e794d447c4445d9277b3",
+      "destination": "tests/contracts/test_generic_policy_coordinates.py",
+      "extracted_sha256": "0f7faeae787c3c569d3ee28d0f0a42d202dd543979d03a883d1a29ab8dc5f9f0",
+      "changes": "portable generic subset; see omitted functions and test adaptations; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_program_boundary.py",
+      "source_sha256": "a35afb54cb5e1ff4d82623f20273fd605ac5dd36d302a70a5378b083b94dbf17",
+      "destination": "tests/contracts/test_generic_program_boundary.py",
+      "extracted_sha256": "c000e45fb42b2bebed928d61d211a7aa554726fabc8dd8ae16b18e6bc5f2953c",
+      "changes": "portable generic subset; see omitted functions and test adaptations; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py",
+      "source_sha256": "de8dad08c7b8a932de80f63f1395a6109a124110bd6f8f52c266a63088160784",
+      "destination": "tests/contracts/test_generic_replication_training_protocol.py",
+      "extracted_sha256": "4355a37d9d0c0bf18c788782601f19818946d0c837befce4ba66a5974fe81066",
+      "changes": "portable generic subset; see omitted functions and test adaptations; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_failure.py",
+      "source_sha256": "2245287b32ae2e449fb8d6b8b7878d715638014806f65b997337dd8c3d837b8b",
+      "destination": "tests/contracts/test_generic_replication_training_failure.py",
+      "extracted_sha256": "4a8f90cd5e6264f99f16c84a3f7586cb7d85dd60df1070f3126263fde2f54b40",
+      "changes": "portable generic subset; see omitted functions and test adaptations; package-qualified sibling imports (including subprocess snippets); portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "docs/experiments/generic-neural-solver/generic-step-lookahead-20260925/source-before/generic_postproposal.py",
+      "destination": "tests/support/archived_postproposal.py",
+      "source_sha256": "b80496a456aec79817ce176a4e643a2cb7a4e0eccecc6b7dc50b1370994232f5",
+      "extracted_sha256": "b80496a456aec79817ce176a4e643a2cb7a4e0eccecc6b7dc50b1370994232f5",
+      "changes": "test-only numerical oracle/operands; Python namespace relocation only; portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "docs/experiments/generic-neural-solver/p5r-native-projection-integration-20260915/before-source/src/dsge_hmc/training/generic_permanent_pass_executor.py",
+      "destination": "tests/support/archived_executor.py",
+      "source_sha256": "55e7d2b4695a2ed4be6689b97ce31fe4ecf145b6e28c5146a556c59ad80ec2a3",
+      "extracted_sha256": "902bdbf57f3341029272e5019359b76a8e007eeb615b09a33e8092db6f3fe454",
+      "changes": "test-only numerical oracle/operands; Python namespace relocation only; portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "docs/experiments/generic-neural-solver/phase9-ez-role-coordinate-repair-20260920/source-before/src/dsge_hmc/training/generic_finite_objective_runner.py",
+      "destination": "tests/support/archived_finite.py",
+      "source_sha256": "a5dd1cbf36e1db9e7786818645c3f6386e9cdf3514b586b07c9e0a7b1a92c4c3",
+      "extracted_sha256": "d770b903854c67e379d7f3ce120c3a59d60c825d35092373a39b1e9bbf50e373",
+      "changes": "test-only numerical oracle/operands; Python namespace relocation only; portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "docs/experiments/generic-neural-solver/generic-relative-progress-face-repair-20260923/compact-fixture.json",
+      "destination": "tests/fixtures/relative-progress.json",
+      "source_sha256": "42ed0002b837134c6d5f84019e6b329717c734f92979787b3536c347281114f7",
+      "extracted_sha256": "42ed0002b837134c6d5f84019e6b329717c734f92979787b3536c347281114f7",
+      "changes": "test-only static regression operand bytes preserved; portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/fixtures/generic_numerical_repair/operands.npz",
+      "destination": "tests/fixtures/generic_numerical_repair/operands.npz",
+      "source_sha256": "7e18cea448bbfd5631178e49c19bd9cf2c50d1d744b628632584530cc1eddffb",
+      "extracted_sha256": "7e18cea448bbfd5631178e49c19bd9cf2c50d1d744b628632584530cc1eddffb",
+      "changes": "test-only static regression operand bytes preserved; portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "tests/fixtures/generic_numerical_repair/manifest.json",
+      "destination": "tests/fixtures/generic_numerical_repair/manifest.json",
+      "source_sha256": "e2da4f2b69da49a7633aa1192e5f94b1f9f666ea5428a4808a4871752b93fb2d",
+      "extracted_sha256": "e2da4f2b69da49a7633aa1192e5f94b1f9f666ea5428a4808a4871752b93fb2d",
+      "changes": "test-only static regression operand bytes preserved; portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    },
+    {
+      "source": "docs/experiments/generic-neural-solver/phase9-ez-nine-task-capacity-20260920/freeze_baseline.py",
+      "destination": "tests/fixtures/capacity-operands.json",
+      "source_sha256": "24ce25c033509e60ecc1771fa554db66de0371934143e79522b6ae7729da2369",
+      "extracted_sha256": "836146deea8a860314596d8f932de0664b26a834c591046cad58bc4d06daa4c7",
+      "changes": "exact manufactured constants from freeze_baseline.py; original generated JSON absent; portable import/path fixes and documented obsolete mock/test-assumption repairs; see validation note"
+    }
+  ],
+  "excluded": [
+    {
+      "source": "src/dsge_hmc/training/generic_execution_validation.py",
+      "reason": "Historical DSGE phase-2 CLI and saved-source campaign audit"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_input_contracts_probe.py",
+      "reason": "Historical DSGE input-contract campaign probe"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_input_inventory.py",
+      "reason": "Historical DSGE saved campaign inventory CLI"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_normalization_probe.py",
+      "reason": "Historical DSGE normalization campaign probe"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_permanent_pass_validation.py",
+      "reason": "Historical DSGE phase-3 CLI; reusable test factories extracted"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_reference_executor.py",
+      "reason": "Historical DSGE phase-1 synthetic protocol CLI"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_replication_evaluation.py",
+      "reason": "DSGE native provider/bank/calibration campaign driver"
+    },
+    {
+      "source": "src/dsge_hmc/training/generic_replication_paired_evaluation.py",
+      "reason": "DSGE native paired endpoint evaluation driver"
+    },
+    {
+      "source": "tests/contracts/test_generic_execution_validation.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_execution_validation"
+    },
+    {
+      "source": "tests/contracts/test_generic_expectation_consumers.py",
+      "reason": "model/campaign dependencies: mooneural.training.sgu_xla_kernel, mooneural.training.sgu_xla_objective"
+    },
+    {
+      "source": "tests/contracts/test_generic_immutable_declarations.py",
+      "reason": "model/campaign dependencies: mooneural.training.rotemberg_method_conformance, mooneural.training.rotemberg_method_conformance_cli, mooneural.training.rotemberg_method_storage_repair"
+    },
+    {
+      "source": "tests/contracts/test_generic_local_envelope.py",
+      "reason": "model/campaign dependencies: mooneural.training.ez_nk_task_reduction"
+    },
+    {
+      "source": "tests/contracts/test_generic_neural_solver_contracts.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_reference_executor"
+    },
+    {
+      "source": "tests/contracts/test_generic_neural_solver_protocol.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_reference_executor"
+    },
+    {
+      "source": "tests/contracts/test_generic_neural_solver_reference_transaction.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_reference_executor"
+    },
+    {
+      "source": "tests/contracts/test_generic_normalization_probe.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_normalization_probe"
+    },
+    {
+      "source": "tests/contracts/test_generic_objective_normalization.py",
+      "reason": "model/campaign dependencies: mooneural.training.rotemberg_normalization_binding"
+    },
+    {
+      "source": "tests/contracts/test_generic_paired_evaluation_cli.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_reference_executor, mooneural.training.generic_replication_evaluation, mooneural.training.generic_replication_paired_evaluation"
+    },
+    {
+      "source": "tests/contracts/test_generic_permanent_pass_validation.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_permanent_pass_validation"
+    },
+    {
+      "source": "tests/contracts/test_generic_program.py:test_live_program_preserves_closed_packets_and_blocks_training",
+      "reason": "historical live DSGE campaign state/CLI, not library behavior"
+    },
+    {
+      "source": "tests/contracts/test_generic_program.py:test_new_activity_refuses_old_start_and_live_writer",
+      "reason": "historical live DSGE campaign state/CLI, not library behavior"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_evaluation.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_replication_evaluation, mooneural.training.rotemberg_replication_bank_materializer, mooneural.training.rotemberg_replication_bank_schedule, mooneural.training.rotemberg_role_evaluators"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_master.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_replication_evaluation, mooneural.training.rotemberg_replication_training_cli"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_paired_evaluation.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_replication_paired_evaluation"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_protocol_seal.py",
+      "reason": "model/campaign dependencies: mooneural.training.generic_reference_executor, mooneural.training.rotemberg_replication_training_cli"
+    },
+    {
+      "source": "tests/contracts/test_generic_statistical_quality.py",
+      "reason": "model/campaign dependencies: mooneural.training.rotemberg_local_solver_quality, mooneural.training.rotemberg_quality_binding"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_adaptive_controller.py",
+      "reason": "model/campaign dependencies: mooneural.training.rotemberg_direct_policy_worker, mooneural.training.rotemberg_rp05_training"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_api.py",
+      "reason": "model/campaign dependencies: common_utils.tf_optimizers"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_analytic_moo_benchmark.py",
+      "reason": "Standalone DSGE benchmark/leaderboard or external official-code artifact harness, not a portable library unit test"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_cagrad_official_code_parity.py",
+      "reason": "Standalone DSGE benchmark/leaderboard or external official-code artifact harness, not a portable library unit test"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_diagnostic_leaderboard_package.py",
+      "reason": "Standalone DSGE benchmark/leaderboard or external official-code artifact harness, not a portable library unit test"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_final_leaderboard_package.py",
+      "reason": "Standalone DSGE benchmark/leaderboard or external official-code artifact harness, not a portable library unit test"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_gpu_scaling_leaderboard.py",
+      "reason": "Standalone DSGE benchmark/leaderboard or external official-code artifact harness, not a portable library unit test"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_independent_leaderboard.py",
+      "reason": "Standalone DSGE benchmark/leaderboard or external official-code artifact harness, not a portable library unit test"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_literature_medium_benchmark.py",
+      "reason": "Standalone DSGE benchmark/leaderboard or external official-code artifact harness, not a portable library unit test"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_matched_budget_leaderboard.py",
+      "reason": "Standalone DSGE benchmark/leaderboard or external official-code artifact harness, not a portable library unit test"
+    },
+    {
+      "source": "tests/common_utils/test_tf_multiobjective_optimizer_crossed_leaderboard.py",
+      "reason": "Standalone DSGE benchmark/leaderboard or external official-code artifact harness, not a portable library unit test"
+    },
+    {
+      "source": "tests/contracts/test_generic_program.py:test_old_packet_is_inspectable_but_cannot_satisfy_different_claim",
+      "reason": "Requires a saved DSGE campaign result; generic synthetic behavior tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_statistics.py:test_phase5r_binding_extracts_exact_canonical_target_in_explicit_order",
+      "reason": "Requires a saved DSGE campaign result; generic synthetic behavior tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_policy_coordinates.py:test_profile_is_immutable_serialized_and_policy_bound",
+      "reason": "only the SGU adapter require_profile assertions omitted; generic immutability/serialization retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_program_boundary.py:test_component_live_writers_share_program_and_protocol_guards",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_program_boundary.py:test_terminal_packet_requires_disposition_even_before_live_write",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_program_boundary.py:test_running_writer_and_terminal_boundary_use_real_protocol",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:test_actual_training_cli_dispatches_fermat_cli_before_canaries_and_retains_partial_activity",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:test_supervisor_retains_timeout_and_applies_limits_before_python_import",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:test_real_controller_terminal_export_retry_preserves_original_identity",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:test_final_design_binds_launcher_and_comparison_inputs",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:test_full_role_coverage_includes_all_rejected_population_controls",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:scope_fixture",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:test_manifest_cannot_change_fixed_calibration_math",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:test_real_program_activity_drift_refuses_resume_before_callbacks",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:test_real_program_controller_source_partial_activity_and_resume",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:test_source_schedule_cannot_be_shortened_or_selector_substituted",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:test_real_live_open_design_refuses_registration",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:registered_manifest_fixture",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_replication_training_protocol.py:real_program_fixture",
+      "reason": "DSGE model adapter or live campaign/CLI test; generic helpers/tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_repair_decisions.py",
+      "reason": "depends on run_generic_expectation_coverage_repair DSGE campaign CLI"
+    },
+    {
+      "source": "tests/contracts/test_generic_component_descent.py:test_saved_parent21_rival_only_matches_independent_numpy_witness",
+      "reason": "requires historical DSGE model run/whole source snapshot; generic numerical and synthetic transaction tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_required_component_progress.py:test_saved89_masked_kernel_matches_independent_reference_constraints",
+      "reason": "requires historical DSGE model run/whole source snapshot; generic numerical and synthetic transaction tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_relative_progress.py:test_actual_saved79_matches_independent_relative_qp",
+      "reason": "requires historical DSGE model run/whole source snapshot; generic numerical and synthetic transaction tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_partial_continuation.py:test_actual_ez18_marker_object_controls_and_refusal_read_only",
+      "reason": "requires historical DSGE model run/whole source snapshot; generic numerical and synthetic transaction tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_preferred_method_transition.py:test_real_sgu_completed_parent_at_thirty",
+      "reason": "requires historical DSGE model run/whole source snapshot; generic numerical and synthetic transaction tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_postproposal_lookahead.py:test_saved_sgu_scalar_witness_does_not_imply_new_trajectory",
+      "reason": "requires historical DSGE model run/whole source snapshot; generic numerical and synthetic transaction tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_nine_task_capacity.py:test_frozen_legacy_parity",
+      "reason": "requires historical DSGE model run/whole source snapshot; generic numerical and synthetic transaction tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_nine_task_capacity.py:parity_outputs",
+      "reason": "requires historical DSGE model run/whole source snapshot; generic numerical and synthetic transaction tests retained"
+    },
+    {
+      "source": "tests/contracts/test_generic_source_calibration_preflight.py",
+      "reason": "historical DSGE calibration/solver campaign script, not library behavior"
+    },
+    {
+      "source": "tests/contracts/test_generic_solver_bounded_stage.py",
+      "reason": "historical DSGE calibration/solver campaign script, not library behavior"
+    }
+  ],
+  "source_changed": false,
+  "numerical_algorithm_changes": false,
+  "legacy_schema_policy": "Serialized dsge_hmc schema IDs retained; namespace-bound executor identities require explicit rebinding",
+  "test_adaptations": [
+    "Package-qualified sibling imports instead of a DSGE-specific test sys.path.",
+    "Portable policy-coordinate, boundary, protocol and failure subsets restored; only model/campaign functions omitted.",
+    "Original synthetic numerical assertions retained; known MethodFallback mock accepts method_factory keyword.",
+    "Live DSGE state, saved calibration artifacts and official-code leaderboard benchmark harnesses are not library tests.",
+    "Portable archived generic oracles and compact numerical operands relocated to tests/support and tests/fixtures; no saved DSGE results or campaign state shipped.",
+    "Inline subprocess imports use package-qualified test modules; isolated import-side-effect checks use fresh Python processes.",
+    "The frozen-master mock supplies plan_hash; the no-private-optimizer assertion permits the existing host transition-history walk.",
+    "A strict, dedicated expected-failure exception records only the unchanged upstream TF 2.21 zero-bias warm-start certificate rejection, after all value/derivative/curvature assertions execute.",
+    "Captured numerical operands are test-only; no DSGE live campaign state or model runtime is required.",
+    "Final packaging strips trailing blank EOF lines only; numerical/test AST semantics are unchanged."
+  ],
+  "production_review": {
+    "namespace_only_files": 66,
+    "additional_path_or_program_name_changes": [
+      "src/mooneural/training/generic_coverage_runner.py",
+      "src/mooneural/training/generic_finite_objective_runner.py",
+      "src/mooneural/training/generic_program.py"
+    ],
+    "numerical_algorithm_changes": false,
+    "patch": "docs/production-path-changes.patch",
+    "separate_source_and_client_roots": true,
+    "multiobjective_utility_module_count": 16
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "array_count": 36,
+  "fixture_sha256": "7e18cea448bbfd5631178e49c19bd9cf2c50d1d744b628632584530cc1eddffb",
+  "schema": "generic_neural_solver.numerical_regressions.v1",
+  "sources": [
+    {
+      "keys": [
+        "adam_input_0",
+        "adam_input_1",
+        "adam_input_2",
+        "adam_input_3",
+        "adam_input_4",
+        "adam_input_5",
+        "adam_input_6",
+        "partition_input_1",
+        "projection_0_0"
+      ],
+      "path": "docs/experiments/generic-neural-solver/phase8-sgu-root-cause-20260918/small-iid-rate-0/tensors.npz",
+      "prefix": "sgu0_",
+      "sha256": "9a16365c80372e8b5c05017cff043c50b4a3848634f49a36730337b643686c78"
+    },
+    {
+      "keys": [
+        "adam_input_0",
+        "adam_input_1",
+        "adam_input_2",
+        "adam_input_3",
+        "adam_input_4",
+        "adam_input_5",
+        "adam_input_6",
+        "partition_input_1",
+        "projection_0_0"
+      ],
+      "path": "docs/experiments/generic-neural-solver/phase8-sgu-root-cause-20260918/small-iid-rate-1/tensors.npz",
+      "prefix": "sgu1_",
+      "sha256": "9668cf33b47dc111c238a82d7eb0ff9253b084f0eb23805c85f890e5905c2525"
+    },
+    {
+      "keys": [
+        "adam_input_0",
+        "adam_input_1",
+        "adam_input_2",
+        "adam_input_3",
+        "adam_input_4",
+        "adam_input_5",
+        "adam_input_6",
+        "partition_input_1",
+        "projection_0_0"
+      ],
+      "path": "docs/experiments/generic-neural-solver/phase8-sgu-root-cause-20260918/small-iid-rate-2/tensors.npz",
+      "prefix": "sgu2_",
+      "sha256": "f32c26e45541e4cb13db08cdbf71ddf4ae579da6ee4372ef1c90588e2a8006e0"
+    },
+    {
+      "keys": [
+        "rows"
+      ],
+      "path": "docs/experiments/generic-neural-solver/p5r-native-projection-backend-20260915/cagrad-low-attempt-1/cagrad-1/operands.npz",
+      "prefix": "rotemberg1_",
+      "sha256": "ec9ddaad1923ec62d0d997e5dafb5ecb45fed9b8b0ae15910a2d88d7c0ac73f2"
+    },
+    {
+      "keys": [
+        "direction"
+      ],
+      "path": "docs/experiments/generic-neural-solver/p5r-native-projection-backend-20260915/cagrad-low-attempt-1/cagrad-1/source.npz",
+      "prefix": "rotemberg1_",
+      "sha256": "aad2018ed59a9e04724789f49bee6d8cf965ef53e2e6c1206392d117be1f68db"
+    },
+    {
+      "keys": [
+        "rows"
+      ],
+      "path": "docs/experiments/generic-neural-solver/p5r-native-projection-backend-20260915/cagrad-low-attempt-1/cagrad-3/operands.npz",
+      "prefix": "rotemberg3_",
+      "sha256": "2f9778ff7e218cbcab1c9a71a6357873ee7e58094d61b21f4a44fc3224327fad"
+    },
+    {
+      "keys": [
+        "direction"
+      ],
+      "path": "docs/experiments/generic-neural-solver/p5r-native-projection-backend-20260915/cagrad-low-attempt-1/cagrad-3/source.npz",
+      "prefix": "rotemberg3_",
+      "sha256": "5f26856f918e3dd85c5634ea714e3e08a6c6d4ff9e2829d84442cbab7d02d651"
+    },
+    {
+      "keys": [
+        "rows"
+      ],
+      "path": "docs/experiments/generic-neural-solver/p5r-native-projection-backend-20260915/cagrad-high-attempt-1/cagrad-6/operands.npz",
+      "prefix": "rotemberg6_",
+      "sha256": "51bd9d29e702dbe1f1f3f2de63772538a2aa0c9c3eb04150a01f106fbd1f241a"
+    },
+    {
+      "keys": [
+        "direction"
+      ],
+      "path": "docs/experiments/generic-neural-solver/p5r-native-projection-backend-20260915/cagrad-high-attempt-1/cagrad-6/source.npz",
+      "prefix": "rotemberg6_",
+      "sha256": "deb2ceb051fa8e8ad60eded4d4d215f02c32f41a8cf8bc603e7a6f188612eb26"
+    },
+    {
+      "keys": [
+        "direction",
+        "protected_rows"
+      ],
+      "path": "docs/experiments/generic-neural-solver/p5r-native-projection-backend-20260915/projection-attempt-1/operands.npz",
+      "prefix": "rotemberg_projection_",
+      "sha256": "9bb6c77aed7eafdda1508c951f28a14ce197364c85a34879798ad052951bec8c"
+    },
+    {
+      "keys": [
+        "rows"
+      ],
+      "path": "docs/experiments/generic-neural-solver/phase8-numerical-repair-20260918/cagrad64.npz",
+      "prefix": "canary64_",
+      "sha256": "2f83d4345ce970ef93590b66aa99ab50cc80e60439141b376e4c4a8ce9e911f5"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+--- upstream-namespaced/src/mooneural/training/generic_coverage_runner.py
++++ src/mooneural/training/generic_coverage_runner.py
+@@ -41,7 +41,12 @@
+ THRESHOLD = 0.01
+ ARM_ID = 0
+ STAGE_ID = "generic-auxiliary-coverage-v1"
+-ROOT = Path(__file__).resolve().parents[3]
++# Library source and client evidence need different anchors in an installed
++# wheel. Relative evidence uses the caller's launch directory; generated
++# artifact references are absolute. Source snapshots retain package-relative
++# names, so installation paths never become snapshot output destinations.
++ROOT = Path.cwd().resolve()
++SOURCE_ROOT = Path(__file__).resolve().parents[1]
+ MEASURE = {
+     "population": "same fixed training-only regression dataset in every scope",
+     "estimator": "exact weighted finite-population loss; no Student-t or sampling uncertainty",
+@@ -127,13 +132,13 @@
+ 
+ def _sources():
+     paths = [Path(__file__).parent / f"{name}.py" for name in SOURCE_MODULES]
+-    paths.append(ROOT / "src/mooneural/artifacts.py")
+-    return {str(path.relative_to(ROOT)): _reference(path)["sha256"] for path in paths}
++    paths.append(SOURCE_ROOT / "artifacts.py")
++    return {str(path.relative_to(SOURCE_ROOT)): _reference(path)["sha256"] for path in paths}
+ 
+ 
+ def _check_sources(sources):
+     for relative, digest in sources.items():
+-        _checked({"path": relative, "sha256": digest})
++        _checked({"path": str(SOURCE_ROOT / relative), "sha256": digest})
+ 
+ 
+ def _validate_inputs(coordinates, width, data, parameters, denominators, split, learning_rate, updates):
+@@ -364,7 +369,7 @@
+     config_reference = _write_json(output / "configuration.json", configuration)
+     data_reference = _write_json(output / "coverage-data.json", data.to_dict())
+     for relative, digest in sources.items():
+-        _copy({"path": relative, "sha256": digest}, output / "source" / relative)
++        _copy({"path": str(SOURCE_ROOT / relative), "sha256": digest}, output / "source" / relative)
+     for index, reference in enumerate(references):
+         _copy(reference, output / "evidence" / f"input-{index}.snapshot")
+     input_binding = {"configuration": config_reference, "data": data_reference,
+--- upstream-namespaced/src/mooneural/training/generic_finite_objective_runner.py
++++ src/mooneural/training/generic_finite_objective_runner.py
+@@ -21,6 +21,7 @@
+ 
+ from .generic_coverage_runner import (
+     ROOT,
++    SOURCE_ROOT,
+     _check_sources,
+     _checked,
+     _copy,
+@@ -133,8 +134,8 @@
+ 
+ def _sources():
+     paths = [Path(__file__).parent / f"{name}.py" for name in SOURCE_MODULES]
+-    paths.append(ROOT / "src/mooneural/artifacts.py")
+-    return {str(path.relative_to(ROOT)): _reference(path)["sha256"] for path in paths}
++    paths.append(SOURCE_ROOT / "artifacts.py")
++    return {str(path.relative_to(SOURCE_ROOT)): _reference(path)["sha256"] for path in paths}
+ 
+ 
+ class FiniteObjectiveAdapter:
+@@ -600,8 +601,12 @@
+     snapshots = [*config_path.parent.glob("evidence/*.snapshot"), *config_path.parent.glob("role-evidence/*.snapshot")]
+     snapshot_hashes = {_reference(path)["sha256"] for path in snapshots}
+     for relative, digest in config["sources"].items():
+-        source = config_path.parent / "source" / relative
+-        if not ((source.is_file() and _reference(source)["sha256"] == digest) or digest in snapshot_hashes):
++        # External callback identities may be absolute. Their retained evidence
++        # snapshot is required; joining an absolute path would instead inspect
++        # the live original and could incorrectly accept a missing snapshot.
++        source = None if Path(relative).is_absolute() else config_path.parent / "source" / relative
++        if not ((source is not None and source.is_file() and _reference(source)["sha256"] == digest)
++                or digest in snapshot_hashes):
+             raise ValueError("continuation parent source snapshot missing or changed")
+     rotation = PermanentPassState.from_dict(parent.metadata["permanent_pass_rotation"])
+     archive_refs = declared["parent_control_archive"]
+@@ -1573,7 +1578,7 @@
+                 guard_modules.append("generic_relative_progress")
+         for module in guard_modules:
+             path = Path(__file__).parent / f"{module}.py"
+-            sources[str(path.relative_to(ROOT))] = _reference(path)["sha256"]
++            sources[str(path.relative_to(SOURCE_ROOT))] = _reference(path)["sha256"]
+     from .generic_certified_numerics import (
+         make_certified_method_function,
+         make_certified_projected_adam_function,
+@@ -1734,7 +1739,7 @@
+     config_reference = _write_json(output / config_name, configuration)
+     data_reference = _write_json(output / "data-binding.json", bound_data)
+     for relative, digest in sources.items():
+-        _copy({"path": relative, "sha256": digest}, output / "source" / relative)
++        _copy({"path": str(SOURCE_ROOT / relative), "sha256": digest}, output / "source" / relative)
+     references = [*evidence_references, *data_references, *training_references, *postproposal_references]
+     if continuation is not None:
+         references.extend(parent_references)
+@@ -1763,7 +1768,7 @@
+             _copy(reference, output / "role-evidence" / f"input-{index}.snapshot")
+             path = _checked(reference)
+             if path.suffix == ".py":
+-                key = str(path.relative_to(ROOT)) if path.is_relative_to(ROOT) else str(path)
++                key = str(path.relative_to(SOURCE_ROOT)) if path.is_relative_to(SOURCE_ROOT) else str(path)
+                 sources[key] = reference["sha256"]
+         measure = {"training": training_measure, "roles": role_declaration["measure"], "scientific_admission": False}
+         seed_registry = {"roles": [{"stage": entry.stage_id, "arm": entry.arm_id, "role": entry.role, "round": entry.round_number,
+--- upstream-namespaced/src/mooneural/training/generic_program.py
++++ src/mooneural/training/generic_program.py
+@@ -9,8 +9,8 @@
+ 
+ from mooneural.artifacts import atomic_write_json
+ 
+-PROGRAM_ID = "generic-neural-solver-rotemberg-endpoint-conformance-sgu-ez-nk"
+-PLAN_PATH = "docs/plans/generic-neural-solver-rotemberg-endpoint-conformance-sgu-ez-nk-master-plan-2026-09-06.md"
++PROGRAM_ID = "mooneural-training"
++PLAN_PATH = "docs/plans/mooneural-training-program.md"
+ STATE_PATH = "docs/experiments/generic-neural-solver/current-state.json"
+ DECISIONS_PATH = "docs/experiments/generic-neural-solver/decision-ledger.json"
+ GRAPH_START = "<!-- BEGIN EXECUTABLE PROGRAM -->\n```json\n"

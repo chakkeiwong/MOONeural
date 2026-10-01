@@ -1,0 +1,109 @@
+{
+  "status": "qualified extraction with one documented upstream expected failure",
+  "date": "2026-10-01",
+  "upstream_commit": "0ec4a4d776e0985dd50efe40e9bed308733c46a6",
+  "package_version": "0.1.0",
+  "framework": "TensorFlow 2.21.0, Python 3.11, CPU, four host cores",
+  "package_cases": 2606,
+  "package_outcomes": {
+    "pass": 2595,
+    "skip": 10,
+    "xfail": 1
+  },
+  "coverage_basis": "initial full sweep, explicit failure/unexecuted-case repair, and complete transitive affected-module regression; no duplicated case counts",
+  "package_runs": [
+    {
+      "revision": 3,
+      "summary": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "30",
+          "skipped": "7",
+          "tests": "2201",
+          "time": "1135.873",
+          "timestamp": "2026-10-01T15:20:44.632823+08:00",
+          "hostname": "ubuntu-MZF2-AC0-00"
+        }
+      ]
+    },
+    {
+      "revision": 6,
+      "summary": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "4",
+          "tests": "435",
+          "time": "150.624",
+          "timestamp": "2026-10-01T15:51:18.531845+08:00",
+          "hostname": "ubuntu-MZF2-AC0-00"
+        }
+      ]
+    },
+    {
+      "revision": 7,
+      "summary": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "7",
+          "tests": "1371",
+          "time": "735.268",
+          "timestamp": "2026-10-01T15:58:15.864526+08:00",
+          "hostname": "ubuntu-MZF2-AC0-00"
+        }
+      ]
+    }
+  ],
+  "pricing_integration": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "2",
+    "tests": "16",
+    "time": "132.470",
+    "timestamp": "2026-10-01T16:10:34.922128+08:00",
+    "hostname": "ubuntu-MZF2-AC0-00"
+  },
+  "example": "one real six-task constrained update committed",
+  "installed_wheel": true,
+  "former_dependency_imports_blocked": true,
+  "base_import_inert": true,
+  "upstream_warm_start": {
+    "status": "upstream_failure_reproduced",
+    "started_at_utc": "2026-10-01T07:43:28.058542+00:00",
+    "seconds": 4.612062159925699,
+    "test": "/home/ubuntu/workspace/dsge_hmc/main-baseline/tests/contracts/test_generic_coverage_initialization.py",
+    "source_module": "/home/ubuntu/workspace/dsge_hmc/main-baseline/src/dsge_hmc/training/generic_coverage_initialization.py",
+    "source_unchanged": true,
+    "fits": [
+      {
+        "valid": false,
+        "normal_residual": 3.2655184408633515e-10,
+        "rank": 40,
+        "task_losses": [
+          0.012067901236355092,
+          0.44888888890912054,
+          0.11555555555916532
+        ]
+      },
+      {
+        "valid": true,
+        "normal_residual": 1.3733284694378575e-13,
+        "rank": 65,
+        "task_losses": [
+          1.3769589405982837e-18,
+          1.3935252160813857e-18,
+          1.2666116885805758e-18
+        ]
+      }
+    ],
+    "tensorflow": "2.21.0",
+    "scientific_phase_promotion": false
+  },
+  "full_update_xla": false,
+  "scientific_training_admission": false
+}

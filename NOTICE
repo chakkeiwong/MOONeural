@@ -1,0 +1,8 @@
+MOONeural contains reusable training code extracted from the dsge_hmc project
+owned by chakkeiwong, at commit 0ec4a4d776e0985dd50efe40e9bed308733c46a6.
+Per-file origins, original hashes and extraction changes are in
+docs/extraction.json. Existing source comments and attributions are retained.
+
+The source checkout and the destination repository did not contain a license
+file at extraction. This notice records provenance and does not introduce a
+new license grant or relicense third-party work.
